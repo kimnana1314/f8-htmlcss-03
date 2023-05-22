@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #2e80ce;
+    --header-bg: #10375c;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
+/* common */
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+.btn {
+    --height: 60px;
+    display: inline-block;
+    min-width: 205px;
+    background: var(--primary-color);
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: var(--height);
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    height: var(--height);
+    text-align: center;
+    border-radius: 99px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn-book:hover {
+    background: var(--primary-color);
+}
+.round-point {
+    width: 6px;
+    height: 6px;
+    background: #5f5b53;
+    border-radius: 50%;
+}
+.round-point-active {
+    background: var(--primary-color);
+}
+.round-point-often {
+    background: #634700;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+}
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+.break-all {
+    word-break: break-all;
+}
+
+/* header */
+.header {
+    padding-top: 30px;
+    min-height: 100vh;
+    background: var(--header-bg);
+}
+
+.logo {
+    position: relative;
+    display: inline-flex;
+    gap: 0.6em;
+    font-size: 1rem;
+}
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: var(--primary-color);
+}
+.logo__circle::after {
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+    width: 1.6em;
+    height: 1.6em;
+    background: #fff;
+}
+.logo__text {
+    color: #ffffff;
+    line-height: 1.6em;
+    text-align: right;
+}
+.logo__brand {
+    display: block;
+    font-weight: 400;
+    font-size: 1.8em;
+}
+.logo__brand--small {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar__list {
+    display: flex;
+}
+.header-action {
+    display: flex;
+    align-items: center;
+}
+.header-action__login,
+.navbar__link {
+    padding: 4px 21px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #c9d2da;
+}
+.navbar__link:hover,
+.navbar_item--active {
+    text-shadow: 1px 0 0 currentColor;
+}
+.navbar_item--active::before {
+    display: inline-block;
+    content: "";
+    position: relative;
+    top: -2px;
+    left: -8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+.header-action__login {
+    margin-right: 7px;
+}
+.header-action__signup {
+    --height: 44px;
+    min-width: 104px;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+}
+.hero__content {
+    flex-shrink: 0;
+    width: 44%;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+.hero__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.hero_images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.hero__img:first-child {
+    position: relative;
+    margin-right: -6px;
+}
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+    object-fit: cover;
+}
