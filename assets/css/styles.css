@@ -563,3 +563,128 @@ li {
     background: #fff;
     cursor: pointer;
 }
+
+.blog {
+    margin-top: 170px;
+}
+.blog-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog-body {
+    width: 40.17%;
+}
+.blog-body__titel {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #10375c;
+}
+.blog-body__link {
+    margin-top: 28px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    text-decoration-line: underline;
+    color: #10375c;
+}
+
+.blog-body__ctn {
+    margin-top: 28px;
+    justify-content: flex-start;
+}
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.blog-item {
+    width: 270px;
+    height: 375px;
+    border: 1px solid #e8ebee;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.blog-item:hover {
+    box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.05);
+}
+
+.blog-item__img {
+    display: block;
+    max-width: 100%;
+    height: 172px;
+    object-fit: cover;
+    transition: 0.25s;
+}
+.blog-item__img:hover {
+    transform: scale(1.1);
+}
+.blog-item__titel {
+    margin-top: 18px;
+    margin-left: 22px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: #10375c;
+}
+.blog-item__desc {
+    margin-top: 10px;
+    margin-left: 22px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #575f66;
+}
+.blog-item__link {
+    margin-top: 12px;
+    margin-left: 22px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.28;
+    color: #10375c;
+}
+
+.welcoming {
+    margin-top: 170px;
+}
+.welcoming-body {
+    padding: 100px 0;
+
+    background: #f7fbff;
+    text-align: center;
+}
+.welcoming-body__titel {
+    position: relative;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #10375c;
+}
+.welcoming-body__titel::after {
+    position: absolute;
+    margin-top: 18px;
+    display: block;
+    content: "";
+    width: 136px;
+    height: 2px;
+    right: calc(50% - 68px);
+    background: #2e80ce;
+}
+.welcoming-body__desc {
+    width: 617px;
+
+    margin-top: 36px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #575f66;
+    margin-left: auto;
+    margin-right: auto;
+}
+.welcoming-body__btn {
+    margin-top: 38px;
+}
