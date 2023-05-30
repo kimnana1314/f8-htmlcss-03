@@ -611,7 +611,9 @@ li {
 .blog-item:hover {
     box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.05);
 }
-
+.blog-item__images {
+    overflow: hidden;
+}
 .blog-item__img {
     display: block;
     width: 100%;
@@ -728,7 +730,7 @@ li {
 }
 
 .footer-item:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 .footer__cta {
     margin-top: 10px;
@@ -778,4 +780,20 @@ li {
     color: #fff;
     background: #2e80ce;
     cursor: pointer;
+}
+
+.footer__line {
+    margin-top: 28px;
+    height: 1px;
+    background: #406181;
+}
+.footer__copyrigh-desc {
+    display: flex;
+    margin-top: 28px;
+    padding-bottom: 42px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    justify-content: center;
+    color: #aab3ba;
 }
